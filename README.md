@@ -1,10 +1,10 @@
 === Post Election ===
+
 Contributors: wordpress.org_username
+
 Donate link: url
+
 Tags: tags
-Requires at least: version_number
-Tested up to: version_number
-Stable tag: stable_tag
 
 Here is a short description of the plugin. This should be no more than 150 chars. No markup here.
 
