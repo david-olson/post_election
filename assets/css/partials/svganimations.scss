@@ -1,0 +1,73 @@
+#flag {
+	transform-origin: 100%;
+	position: absolute;
+}
+#flag-holder {
+	perspective: 50px;
+	position: relative;
+}
+@keyframes cloud-float {
+	0% {
+		transform: translateX(0px);
+	}
+	50% {
+		transform: translateX(250px);
+	}
+	100% {
+		transform: translateX(0px);
+	}
+}
+@keyframes cloud-float-back {
+	0% {
+		transform: translateX(0px);
+	}
+	50% {
+		transform: translateX(-250px);
+	}
+	100% {
+		transform: translateX(0px);
+	}
+}
+
+@keyframes flagwave {
+	0% {
+		transform: rotateY(0deg);
+	}
+	33% {
+		transform: rotateY(25deg);
+	}
+	66% {
+		transform: rotateY(0deg);
+	}
+	100% {
+		transform: rotateY(-75deg);
+	}
+}
+
+#plane {
+	transform: scale(.5);
+}
+@keyframes plane {
+	0% {
+		transform: translateX(0px);
+	}
+	100% {
+		transform: translateX(5000px);
+	}
+}
+
+#cloud-8 path, #cloud-1 path, #cloud-2 path, #cloud-5 path {
+	animation: cloud-float 70s infinite linear; 
+}
+#cloud-4 path #cloud-3 path {
+	animation: cloud-float-back 60s infinite linear;
+}
+#flag {
+	animation: flagwave 3s infinite ease;
+	animation-fill-mode: both;
+	animation-direction: alternate;
+}
+#plane {
+	animation: plane 150s linear;
+	animation-delay: 25s;
+}

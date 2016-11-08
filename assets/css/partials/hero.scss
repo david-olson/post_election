@@ -1,0 +1,17 @@
+.hero {
+	position: relative;
+	.top_bar {
+		position: absolute; 
+		top: 0;
+		left: 0;
+		width: 100%;
+		text-align: left;
+		.logo {
+			img {
+				width: calc(100px + 25vw);
+				max-width: 275px;
+				padding: 20px;
+			}
+		}
+	}
+}

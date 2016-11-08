@@ -1,0 +1,23 @@
+@import 'partials/reset';
+@import 'partials/typography';
+@import 'partials/svganimations';
+@import 'partials/hero';
+@import 'partials/video';
+@import 'partials/bodycopy';
+@import 'partials/form';
+@import 'partials/hubfooter';
+
+
+.hero {
+	padding-bottom: 0;
+	margin-bottom: 0;
+	background-color: #687c40;
+}
+.content_wrapper {
+		width: 95%; 
+		margin: 0 auto;
+		max-width: 1000px;
+	}
+
+
+
