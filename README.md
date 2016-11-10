@@ -4,7 +4,7 @@ Author: David Olson
 
 == Install ==
 
-Clone the repo and use npm install to download all of the build dependencies. 
+Clone the repo and use `npm install` to download all of the build dependencies. 
 
 == Gulpfile ==
 
