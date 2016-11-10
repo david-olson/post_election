@@ -2,6 +2,9 @@
 	background-color: #393838;
 	color: #ffffff;
 	padding: 0 0 150px 0;
+	p {
+		text-align: center;
+	}
 	.input_wrapper {
 		width: 45%;
 		margin-right: 9%;
@@ -10,37 +13,78 @@
 			margin-right: 0;
 		}
 	}
-	input[type="text"] {
-		background-color: #393838;
-		border: 0;
-		color: #ffffff;
-		border-bottom: 2px solid #999999;
-		display: block;
-		width: 100%;
-		margin-bottom: 5px;
-		outline: none;
-		padding: 10px 0;
-		transition: all ease-out .25s;
-		&:focus {
-			border-bottom-color: #ffffff;
-		}
-	}
 	label {
 		display: block;
 		margin-bottom: 50px;
 	}
-	input[type="submit"] {
+	input[type="submit"], button {
 		width: 100%;
-		background-color: #393838;
-		border: 2px solid #ffffff;
-		color: #ffffff;
-		padding: 10px 0;
+		background: #393838 !important;
+		border: 2px solid #ffffff !important;
+		color: #ffffff !important;
+		padding: 10px 0 !important;
 		outline: none;
 		transition: all ease-out .25s;
 		cursor: pointer;
+		box-shadow: none  !important;
+		margin-top: 50px !important;
+		font-family: 'Playfair Display', serif;
+		font-size: 1.5em !important;				
 		&:hover, &:focus {
-			background-color: #ffffff;
-			color: #393838;
+			background-color: #ffffff !important;
+			color: #393838 !important;
+		}
+	}
+	form {
+		width: 100% !important;
+	}
+	.mktoFormRow, .mktoButtonRow {
+		width: 100%;
+	}
+	.mktoButtonRow  span {
+		margin-left: 0 !important;
+	}
+	.mktoFormCol {
+		width: 48%;
+		margin-right: 4%;
+		&:nth-of-type(even) {
+			margin-right: 0;
+		}
+	}
+	.mktoForm .mktoRequiredField .mktoAsterix {
+			display: inline;
+		    clear: both;
+		    float: none;
+		    padding-right: 5px;
+		    color: #ffffff;
+		}
+	.mktoFieldWrap {
+		width: 100% !important;
+		label {
+			width: 100% !important;
+			display: block;
+			color: #ffffff;
+			font-family: 'Playfair Display', serif;
+			font-weight: normal !important;
+			font-size: 1.5em;
+		}
+		input[type="text"], input[type="email"] {
+			width: 100% !important;
+			background-color: #393838;
+			border: 0;
+			color: #ffffff;
+			border-bottom: 2px solid #999999;
+			display: block;
+			width: 100%;
+			margin-bottom: 5px;
+			outline: none;
+			padding: 10px 0;
+			transition: all ease-out .25s;
+			font-family: 'Playfair Display', serif;
+			font-size: 1.5em;
+			&:focus {
+				border-bottom-color: #ffffff;
+			}
 		}
 	}
 }

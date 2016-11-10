@@ -1,17 +1,38 @@
 .hero {
-	position: relative;
+	background-color: #b2d0df;
 	.top_bar {
-		position: absolute; 
 		top: 0;
 		left: 0;
 		width: 100%;
-		text-align: left;
+		text-align: center;
 		.logo {
 			img {
 				width: calc(100px + 25vw);
-				max-width: 275px;
+				max-width: 200px;
 				padding: 20px;
 			}
 		}
+		h1 {
+			color: #ffffff;
+			margin: 0;
+		}
+	}
+	svg {
+		padding-bottom: 0;
+		margin-bottom: -5px;
+		width: 100%;
+	}
+}
+
+.no-svg {
+	svg {
+		display: none;
+	}
+	.hero {
+		width: 100%;
+		height: 800px;
+		background-image: url('./assets/img/white-house.png');
+		background-size: cover;
+		background-position: center bottom;
 	}
 }
