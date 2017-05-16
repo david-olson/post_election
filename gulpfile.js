@@ -1,4 +1,4 @@
-//Project Config
+//Project Config 
 var project = 'postElection',
     url = 'localhost:9888',
     bower = './assets/bower_components/',
